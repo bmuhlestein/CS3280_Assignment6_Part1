@@ -17,5 +17,10 @@ namespace CS3280_Assignment6_Part1
         {
             InitializeComponent();
         }
+
+        private void btnAddPassenger_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

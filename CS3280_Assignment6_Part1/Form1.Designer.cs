@@ -160,6 +160,7 @@
             this.btnAddPassenger.TabIndex = 8;
             this.btnAddPassenger.Text = "Add Passenger";
             this.btnAddPassenger.UseVisualStyleBackColor = true;
+            this.btnAddPassenger.Click += new System.EventHandler(this.btnAddPassenger_Click);
             // 
             // gbColorKey
             // 
