@@ -20,7 +20,10 @@ namespace CS3280_Assignment6_Part1
 
         private void btnAddPassenger_Click(object sender, EventArgs e)
         {
-
+            AddPassengerForm newPassenger = new AddPassengerForm();
+            this.Hide();
+            newPassenger.ShowDialog();
+            this.Show();
         }
     }
 }

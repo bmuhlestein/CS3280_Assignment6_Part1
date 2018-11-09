@@ -17,5 +17,14 @@ namespace CS3280_Assignment6_Part1
             InitializeComponent();
         }
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
