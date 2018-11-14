@@ -52,6 +52,9 @@
     <Compile Include="AddPassengerForm.Designer.cs">
       <DependentUpon>AddPassengerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="clsDataAccess.cs" />
+    <Compile Include="clsFlight.cs" />
+    <Compile Include="clsFlightManager.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

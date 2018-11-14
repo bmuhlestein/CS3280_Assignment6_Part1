@@ -79,12 +79,13 @@
             this.cbFlightName.Name = "cbFlightName";
             this.cbFlightName.Size = new System.Drawing.Size(228, 37);
             this.cbFlightName.TabIndex = 0;
+            this.cbFlightName.SelectedIndexChanged += new System.EventHandler(this.cbFlightName_SelectedIndexChanged_1);
             // 
             // lblFlightSelection
             // 
             this.lblFlightSelection.AutoSize = true;
             this.lblFlightSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFlightSelection.Location = new System.Drawing.Point(567, 61);
+            this.lblFlightSelection.Location = new System.Drawing.Point(565, 61);
             this.lblFlightSelection.Name = "lblFlightSelection";
             this.lblFlightSelection.Size = new System.Drawing.Size(190, 31);
             this.lblFlightSelection.TabIndex = 1;
@@ -94,7 +95,7 @@
             // 
             this.lblPassengerSelection.AutoSize = true;
             this.lblPassengerSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassengerSelection.Location = new System.Drawing.Point(504, 124);
+            this.lblPassengerSelection.Location = new System.Drawing.Point(502, 124);
             this.lblPassengerSelection.Name = "lblPassengerSelection";
             this.lblPassengerSelection.Size = new System.Drawing.Size(253, 31);
             this.lblPassengerSelection.TabIndex = 2;
@@ -102,6 +103,7 @@
             // 
             // cbPassengerName
             // 
+            this.cbPassengerName.Enabled = false;
             this.cbPassengerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPassengerName.FormattingEnabled = true;
             this.cbPassengerName.Location = new System.Drawing.Point(763, 124);
@@ -113,7 +115,7 @@
             // 
             this.lblPassengerSeatSelection.AutoSize = true;
             this.lblPassengerSeatSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassengerSeatSelection.Location = new System.Drawing.Point(523, 184);
+            this.lblPassengerSeatSelection.Location = new System.Drawing.Point(521, 184);
             this.lblPassengerSeatSelection.Name = "lblPassengerSeatSelection";
             this.lblPassengerSeatSelection.Size = new System.Drawing.Size(234, 31);
             this.lblPassengerSeatSelection.TabIndex = 4;
@@ -121,6 +123,7 @@
             // 
             // cbPassengerSeat
             // 
+            this.cbPassengerSeat.Enabled = false;
             this.cbPassengerSeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPassengerSeat.FormattingEnabled = true;
             this.cbPassengerSeat.Location = new System.Drawing.Point(763, 184);
@@ -527,6 +530,7 @@
             this.Controls.Add(this.cbFlightName);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.pnlFlight1.ResumeLayout(false);
             this.pnlFlight2.ResumeLayout(false);
             this.ResumeLayout(false);
