@@ -6,18 +6,24 @@ using System.Threading.Tasks;
 
 namespace CS3280_Assignment6_Part1
 {
-
-    //private clsDataAccess hi;
-
-
     class clsFlight
     {
-
-        //which only has attributes and properties, and is used to just hold Flight information.  
+        /// <summary>
+        /// String variable for storing flight ID
+        /// </summary>
         private string flightID;
+        /// <summary>
+        /// String variable for storing flight number
+        /// </summary>
         private string flightNumber;
+        /// <summary>
+        /// String variable for storing aircraft type
+        /// </summary>
         private string aircraftType;
 
+        /// <summary>
+        /// public variable for flight id: get = flightid : set = flightid
+        /// </summary>
         public string getFlightID
         {
             set
@@ -30,6 +36,9 @@ namespace CS3280_Assignment6_Part1
             }
         }
 
+        /// <summary>
+        /// public variable for flight number: get = flightNumber : set = flightNumber
+        /// </summary>
         public string getFlightNumber
         {
             set
@@ -42,6 +51,9 @@ namespace CS3280_Assignment6_Part1
             }
         }
 
+        /// <summary>
+        /// public variable for aircraft Type: get = aircraftType : set = aircraftType
+        /// </summary>
         public string getAircraftType
         {
             set
@@ -54,12 +66,14 @@ namespace CS3280_Assignment6_Part1
             }
         }
 
+        /// <summary>
+        /// Public override of the ToString()
+        /// </summary>
+        /// <returns>flight number + aircraft type</returns>
         public override string ToString()
         {
             return flightNumber + " - " + aircraftType;
         }
 
-
     }
-
 }
